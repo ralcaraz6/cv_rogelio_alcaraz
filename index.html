@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rogelio Alcaraz — Data & AI</title>
-  <meta name="description" content="Rogelio Alcaraz — Director at Algoryme. Senior Data Analyst with 8+ years turning data and AI into growth. Barcelona." />
-  <meta property="og:title" content="Rogelio Alcaraz — Data & AI" />
+  <title>Rogelio Alcaraz · Data & AI</title>
+  <meta name="description" content="Rogelio Alcaraz. Director at Algoryme. Data and AI for growth. Barcelona." />
+  <meta property="og:title" content="Rogelio Alcaraz · Data & AI" />
   <meta property="og:description" content="Director at Algoryme. Senior Data Analyst blending data, AI and marketing to drive growth." />
   <meta property="og:type" content="profile" />
   <meta property="og:image" content="assets/profile.png" />
@@ -216,11 +216,17 @@
     .prev-list li:last-child { border-bottom: none; }
     .prev-list .date { color: var(--faint); font-weight: 600; font-size: .82rem; }
 
-    footer {
-      text-align: center; padding: 22px; font-size: .82rem;
-      color: var(--faint); background: #fafbfd; border-top: 1px solid var(--line);
+    .extras {
+      padding: 34px 44px 40px;
+      background: #fafbfd;
+      border-top: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 34px;
     }
-    footer a { color: var(--accent); text-decoration: none; }
+    .extras .kv { margin-bottom: 12px; }
+    .extras .kv .l { font-weight: 600; font-size: .92rem; }
+    .extras .kv .d { color: var(--muted); font-size: .86rem; }
 
     /* ---------- Responsive ---------- */
     @media (max-width: 820px) {
@@ -231,6 +237,7 @@
       .body { grid-template-columns: 1fr; }
       .sidebar { border-right: none; border-bottom: 1px solid var(--line); }
       .main { padding: 30px 24px; }
+      .extras { grid-template-columns: 1fr; gap: 24px; padding: 30px 24px; }
     }
 
     /* ---------- Print ---------- */
@@ -250,7 +257,6 @@
       <div>
         <h1>Rogelio Alcaraz</h1>
         <div class="tagline">Director @ Algoryme · Data &amp; AI for Growth</div>
-        <div class="sub">Senior Data Analyst · 8+ years turning data into decisions</div>
         <div class="hero-contact">
           <span>📍 Barcelona, Spain</span>
           <a href="mailto:ralcaraz.canals@gmail.com">✉️ ralcaraz.canals@gmail.com</a>
@@ -265,26 +271,30 @@
       <!-- SIDEBAR -->
       <aside class="sidebar">
         <div class="section">
-          <h2>Profile</h2>
-          <p style="font-size:.9rem;color:var(--muted);">
-            Data analyst turned agency director. I connect AI to companies' data so teams
-            can ask questions in natural language, run predictive models and automate
-            decisions — backed by 8+ years across marketing, product and growth.
-          </p>
-        </div>
-
-        <div class="section">
           <h2>Core Skills</h2>
           <div class="skill-group">
             <h3>Tools &amp; Software</h3>
             <div class="tags">
-              <span class="tag">SQL · 5+ yrs</span>
-              <span class="tag">Python · 3+ yrs</span>
-              <span class="tag">Tableau · 5+ yrs</span>
-              <span class="tag">Power BI</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
               <span class="tag">Databricks</span>
+              <span class="tag">BigQuery</span>
+              <span class="tag">Snowflake</span>
+              <span class="tag">dbt</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Looker</span>
+              <span class="tag">Google Analytics</span>
               <span class="tag">Salesforce</span>
+              <span class="tag">HubSpot</span>
+              <span class="tag">Excel</span>
+              <span class="tag">Zapier / n8n</span>
               <span class="tag">LLMs / AI</span>
+              <span class="tag">Claude / OpenAI APIs</span>
+              <span class="tag">Git</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">WordPress</span>
             </div>
           </div>
           <div class="skill-group">
@@ -308,41 +318,6 @@
             </div>
           </div>
         </div>
-
-        <div class="section">
-          <h2>Languages</h2>
-          <ul class="lang">
-            <li><span>Spanish</span><span>Native</span></li>
-            <li><span>Catalan</span><span>Native</span></li>
-            <li><span>English</span><span>Fluent</span></li>
-            <li><span>French</span><span>Beginner</span></li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <h2>Education</h2>
-          <div class="kv">
-            <div class="l">Bachelor of Business</div>
-            <div class="d">University of Barcelona · 2014–2018</div>
-          </div>
-          <div class="kv">
-            <div class="l">Advanced Data Analytics</div>
-            <div class="d">Google Academy · 2023</div>
-          </div>
-          <div class="kv">
-            <div class="l">Content Marketing</div>
-            <div class="d">HubSpot Academy · 2020</div>
-          </div>
-        </div>
-
-        <div class="section">
-          <h2>Interests</h2>
-          <div class="tags">
-            <span class="tag">Tennis &amp; Soccer</span>
-            <span class="tag">Photography</span>
-            <span class="tag">Meditation</span>
-          </div>
-        </div>
       </aside>
 
       <!-- MAIN -->
@@ -354,19 +329,19 @@
           <div class="job">
             <div class="top">
               <div class="role">Director <span class="current-badge">Now</span></div>
-              <div class="date">2025 – Present</div>
+              <div class="date">2025 to Present</div>
             </div>
             <div class="company">Algoryme · Barcelona, Spain</div>
             <div class="desc">Web development &amp; data/AI agency building data-driven products for companies.</div>
             <ul>
-              <li>Lead the agency end to end — strategy, delivery and client relationships — building web platforms and data/AI systems that plug into each client's data.</li>
+              <li>Lead the agency end to end: strategy, delivery and client relationships, building web platforms and data/AI systems that plug into each client's data.</li>
               <li>Design data models and predictive models (e.g. <strong>Lifetime Value</strong>) that turn raw data into forecasting, segmentation and automated decisions.</li>
               <li>Connect LLMs to company databases so teams query data in natural language and automate reporting without waiting on an analyst.</li>
             </ul>
             <div style="margin-top:10px;font-size:.82rem;color:var(--faint);font-weight:700;text-transform:uppercase;letter-spacing:.6px;">Selected clients</div>
             <div class="clients">
               <a class="client-chip" href="https://www.kleinanzeigen.de/" target="_blank" rel="noopener">Kleinanzeigen</a>
-              <a class="client-chip" href="https://app.svinvesting.com/" target="_blank" rel="noopener">SV Investing</a>
+              <a class="client-chip" href="https://app.svinvesting.com/" target="_blank" rel="noopener">SVInvesting</a>
             </div>
           </div>
 
@@ -374,7 +349,7 @@
           <div class="job">
             <div class="top">
               <div class="role">Founder</div>
-              <div class="date">09/2024 – 2025</div>
+              <div class="date">09/2024 to 2025</div>
             </div>
             <div class="company">RefineFast · Barcelona, Spain</div>
             <div class="desc">AI-driven platform helping entrepreneurs validate business ideas with real-world data.</div>
@@ -389,13 +364,13 @@
           <div class="job">
             <div class="top">
               <div class="role">Senior Data Analyst</div>
-              <div class="date">08/2023 – 08/2024</div>
+              <div class="date">08/2023 to 08/2024</div>
             </div>
             <div class="company">Mable · Sydney, Australia</div>
             <div class="desc">Online platform connecting clients with support providers for care services.</div>
             <ul>
               <li>Built an AI model using LLMs to detect support workers in stressful client interactions and offer tailored counselling.</li>
-              <li>Led B2B insights reporting to the CGO &amp; Head of Partnerships — lead scoring, churn analysis, attribution and conversion-likelihood modelling.</li>
+              <li>Led B2B insights reporting to the CGO &amp; Head of Partnerships: lead scoring, churn analysis, attribution and conversion-likelihood modelling.</li>
               <li>Delivered C-level monthly reporting in Tableau &amp; SQL and mentored other analysts.</li>
             </ul>
           </div>
@@ -404,7 +379,7 @@
           <div class="job">
             <div class="top">
               <div class="role">Data Analyst</div>
-              <div class="date">05/2022 – 07/2023</div>
+              <div class="date">05/2022 to 07/2023</div>
             </div>
             <div class="company">Vitable · Sydney, Australia</div>
             <div class="desc">Health-tech startup, 25+ employees and $15m+ annual revenue.</div>
@@ -419,7 +394,7 @@
           <div class="job">
             <div class="top">
               <div class="role">Growth Marketer &amp; Affiliates Manager</div>
-              <div class="date">01/2020 – 04/2022</div>
+              <div class="date">01/2020 to 04/2022</div>
             </div>
             <div class="company">Vitable · Sydney, Australia</div>
             <ul>
@@ -433,7 +408,7 @@
           <div class="job">
             <div class="top">
               <div class="role">Growth Marketer</div>
-              <div class="date">02/2019 – 12/2019</div>
+              <div class="date">02/2019 to 12/2019</div>
             </div>
             <div class="company">Abitari · Barcelona, Spain</div>
             <div class="desc">B2B SaaS automating hotel check-ins, serving 100+ clients.</div>
@@ -447,7 +422,7 @@
           <div class="job">
             <div class="top">
               <div class="role">Co-Founder &amp; CEO</div>
-              <div class="date">11/2017 – 01/2019</div>
+              <div class="date">11/2017 to 01/2019</div>
             </div>
             <div class="company">Restia · Barcelona, Spain</div>
             <div class="desc">B2B SaaS to take restaurant orders and charge customers.</div>
@@ -460,38 +435,51 @@
         </div>
 
         <div class="section">
-          <h2>Selected Data Projects</h2>
-          <div class="project">
-            <h4>Lifetime Value (LTV) predictive model</h4>
-            <p>Predictive model estimating customer lifetime value to guide acquisition budget, segmentation and retention priorities.</p>
-          </div>
-          <div class="project">
-            <h4>Courier attribution model</h4>
-            <p>In-house probabilistic model picking the best courier per order by price, historical delivery time and error rate.
-            <span class="impact">→ 5% lower shipping time and cost.</span></p>
-          </div>
-          <div class="project">
-            <h4>Incorrect home addresses model</h4>
-            <p>Probabilistic model predicting address accuracy from client location.
-            <span class="impact">→ saved thousands in return-to-sender fees.</span></p>
-          </div>
-        </div>
-
-        <div class="section">
           <h2>Previous Experience</h2>
           <ul class="prev-list">
-            <li><span>Junior Marketing Analyst · La Caixa, Barcelona</span><span class="date">08/2017 – 04/2018</span></li>
-            <li><span>Volunteer · Council of the European Union, Hannover</span><span class="date">07/2017 – 08/2017</span></li>
-            <li><span>Product Expert · Samsung, Barcelona</span><span class="date">03/2016 – 07/2017</span></li>
-            <li><span>Volunteer · Council of the European Union, Marche-en-Famenne</span><span class="date">07/2015 – 08/2015</span></li>
+            <li><span>Junior Marketing Analyst · La Caixa, Barcelona</span><span class="date">08/2017 to 04/2018</span></li>
+            <li><span>Volunteer · Council of the European Union, Hannover</span><span class="date">07/2017 to 08/2017</span></li>
+            <li><span>Product Expert · Samsung, Barcelona</span><span class="date">03/2016 to 07/2017</span></li>
+            <li><span>Volunteer · Council of the European Union, Marche-en-Famenne</span><span class="date">07/2015 to 08/2015</span></li>
           </ul>
         </div>
       </section>
     </div>
 
-    <footer>
-      Built with data, coffee and a bit of AI · <a href="https://algoryme.com" target="_blank" rel="noopener">algoryme.com</a>
-    </footer>
+    <section class="extras">
+      <div>
+        <h2 style="font-size:.82rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:700;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--line);">Education</h2>
+        <div class="kv">
+          <div class="l">Bachelor of Business</div>
+          <div class="d">University of Barcelona · 2014 to 2018</div>
+        </div>
+        <div class="kv">
+          <div class="l">Advanced Data Analytics</div>
+          <div class="d">Google Academy · 2023</div>
+        </div>
+        <div class="kv">
+          <div class="l">Content Marketing</div>
+          <div class="d">HubSpot Academy · 2020</div>
+        </div>
+      </div>
+      <div>
+        <h2 style="font-size:.82rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:700;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--line);">Languages</h2>
+        <ul class="lang">
+          <li><span>Spanish</span><span>Native</span></li>
+          <li><span>Catalan</span><span>Native</span></li>
+          <li><span>English</span><span>Fluent</span></li>
+          <li><span>French</span><span>Beginner</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2 style="font-size:.82rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:700;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--line);">Interests</h2>
+        <div class="tags">
+          <span class="tag">Tennis &amp; Soccer</span>
+          <span class="tag">Photography</span>
+          <span class="tag">Meditation</span>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
