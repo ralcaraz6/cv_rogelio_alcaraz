@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rogelio Alcaraz — Data & AI</title>
+  <meta name="description" content="Rogelio Alcaraz — Director at Algoryme. Senior Data Analyst with 8+ years turning data and AI into growth. Barcelona." />
+  <meta property="og:title" content="Rogelio Alcaraz — Data & AI" />
+  <meta property="og:description" content="Director at Algoryme. Senior Data Analyst blending data, AI and marketing to drive growth." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:image" content="assets/profile.png" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+  <style>
+    :root {
+      --bg: #f4f6f9;
+      --card: #ffffff;
+      --ink: #1a2230;
+      --muted: #5c6a7e;
+      --faint: #8a97a8;
+      --line: #e6eaf0;
+      --accent: #1d4ed8;
+      --accent-soft: #eaf0ff;
+      --shadow: 0 10px 40px rgba(20, 40, 80, 0.08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      padding: 32px 20px;
+    }
+    .page {
+      max-width: 1060px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    /* ---------- Header ---------- */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 44px 48px;
+      background: linear-gradient(135deg, #0f1b33 0%, #1d3a6e 55%, #1d4ed8 100%);
+      color: #fff;
+    }
+    .hero img {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255,255,255,.85);
+      box-shadow: 0 8px 24px rgba(0,0,0,.28);
+      flex-shrink: 0;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .hero .tagline {
+      margin-top: 8px;
+      font-size: 1.06rem;
+      color: #cfe0ff;
+      font-weight: 500;
+    }
+    .hero .sub {
+      margin-top: 4px;
+      font-size: .95rem;
+      color: #9fb6e0;
+    }
+    .hero-contact {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      font-size: .9rem;
+    }
+    .hero-contact a, .hero-contact span {
+      color: #dbe6ff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hero-contact a:hover { color: #fff; text-decoration: underline; }
+
+    /* ---------- Layout ---------- */
+    .body {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+    }
+    .sidebar {
+      padding: 36px 32px;
+      background: #fafbfd;
+      border-right: 1px solid var(--line);
+    }
+    .main { padding: 36px 44px; }
+
+    .section { margin-bottom: 30px; }
+    .section:last-child { margin-bottom: 0; }
+    .section h2 {
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    /* ---------- Sidebar bits ---------- */
+    .skill-group { margin-bottom: 18px; }
+    .skill-group h3 {
+      font-size: .78rem;
+      color: var(--faint);
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: .8rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .kv { margin-bottom: 12px; }
+    .kv .l { font-weight: 600; font-size: .92rem; }
+    .kv .d { color: var(--muted); font-size: .86rem; }
+    ul.lang { list-style: none; }
+    ul.lang li {
+      display: flex; justify-content: space-between;
+      font-size: .9rem; padding: 5px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    ul.lang li:last-child { border-bottom: none; }
+    ul.lang li span:last-child { color: var(--faint); font-size: .82rem; }
+
+    /* ---------- Experience ---------- */
+    .job { position: relative; padding-left: 22px; margin-bottom: 26px; }
+    .job:last-child { margin-bottom: 0; }
+    .job::before {
+      content: "";
+      position: absolute; left: 0; top: 6px;
+      width: 11px; height: 11px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+    .job::after {
+      content: "";
+      position: absolute; left: 5px; top: 20px; bottom: -20px;
+      width: 2px; background: var(--line);
+    }
+    .job:last-child::after { display: none; }
+    .job .top {
+      display: flex; justify-content: space-between;
+      align-items: baseline; flex-wrap: wrap; gap: 4px;
+    }
+    .job .role { font-weight: 700; font-size: 1.06rem; }
+    .job .company { color: var(--accent); font-weight: 600; }
+    .job .date {
+      font-size: .82rem; color: var(--faint);
+      font-weight: 600; white-space: nowrap;
+    }
+    .job .desc { color: var(--muted); font-size: .88rem; margin: 3px 0 8px; font-style: italic; }
+    .job ul { margin-left: 18px; }
+    .job ul li { font-size: .9rem; margin-bottom: 5px; color: #35435a; }
+    .current-badge {
+      display: inline-block; background: #dcfce7; color: #15803d;
+      font-size: .68rem; font-weight: 700; padding: 2px 8px;
+      border-radius: 999px; text-transform: uppercase;
+      letter-spacing: .5px; margin-left: 8px; vertical-align: middle;
+    }
+
+    /* ---------- Projects ---------- */
+    .project {
+      background: #fafbfd; border: 1px solid var(--line);
+      border-radius: 12px; padding: 16px 18px; margin-bottom: 12px;
+    }
+    .project h4 { font-size: .98rem; margin-bottom: 4px; }
+    .project p { font-size: .88rem; color: var(--muted); }
+    .project .impact { color: #15803d; font-weight: 600; }
+
+    .clients {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px;
+    }
+    .client-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #fff; border: 1px solid var(--line);
+      border-radius: 10px; padding: 6px 12px;
+      font-size: .85rem; font-weight: 600; color: var(--ink);
+      text-decoration: none;
+    }
+    .client-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+    .prev-list { list-style: none; }
+    .prev-list li {
+      display: flex; justify-content: space-between; flex-wrap: wrap;
+      font-size: .88rem; padding: 6px 0; border-bottom: 1px dashed var(--line);
+      color: #35435a;
+    }
+    .prev-list li:last-child { border-bottom: none; }
+    .prev-list .date { color: var(--faint); font-weight: 600; font-size: .82rem; }
+
+    footer {
+      text-align: center; padding: 22px; font-size: .82rem;
+      color: var(--faint); background: #fafbfd; border-top: 1px solid var(--line);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 820px) {
+      body { padding: 0; }
+      .page { border-radius: 0; }
+      .hero { flex-direction: column; text-align: center; padding: 36px 24px; }
+      .hero-contact { justify-content: center; }
+      .body { grid-template-columns: 1fr; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--line); }
+      .main { padding: 30px 24px; }
+    }
+
+    /* ---------- Print ---------- */
+    @media print {
+      body { background: #fff; padding: 0; }
+      .page { box-shadow: none; max-width: 100%; }
+      .hero { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .job::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <!-- HERO -->
+    <header class="hero">
+      <img src="assets/profile.png" alt="Rogelio Alcaraz" />
+      <div>
+        <h1>Rogelio Alcaraz</h1>
+        <div class="tagline">Director @ Algoryme · Data &amp; AI for Growth</div>
+        <div class="sub">Senior Data Analyst · 8+ years turning data into decisions</div>
+        <div class="hero-contact">
+          <span>📍 Barcelona, Spain</span>
+          <a href="mailto:ralcaraz.canals@gmail.com">✉️ ralcaraz.canals@gmail.com</a>
+          <a href="tel:+34618142108">📞 +34 618 142 108</a>
+          <a href="https://www.linkedin.com/in/rogelio-alcaraz" target="_blank" rel="noopener">in LinkedIn</a>
+          <a href="https://algoryme.com" target="_blank" rel="noopener">🌐 algoryme.com</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="body">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="section">
+          <h2>Profile</h2>
+          <p style="font-size:.9rem;color:var(--muted);">
+            Data analyst turned agency director. I connect AI to companies' data so teams
+            can ask questions in natural language, run predictive models and automate
+            decisions — backed by 8+ years across marketing, product and growth.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Core Skills</h2>
+          <div class="skill-group">
+            <h3>Tools &amp; Software</h3>
+            <div class="tags">
+              <span class="tag">SQL · 5+ yrs</span>
+              <span class="tag">Python · 3+ yrs</span>
+              <span class="tag">Tableau · 5+ yrs</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Databricks</span>
+              <span class="tag">Salesforce</span>
+              <span class="tag">LLMs / AI</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Techniques</h3>
+            <div class="tags">
+              <span class="tag">Predictive Analytics</span>
+              <span class="tag">Lifetime Value (LTV)</span>
+              <span class="tag">Data Visualisation</span>
+              <span class="tag">A/B Testing</span>
+              <span class="tag">Lead Scoring</span>
+              <span class="tag">Attribution Modelling</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Strengths</h3>
+            <div class="tags">
+              <span class="tag">Analytical</span>
+              <span class="tag">Problem solving</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Digital marketing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Languages</h2>
+          <ul class="lang">
+            <li><span>Spanish</span><span>Native</span></li>
+            <li><span>Catalan</span><span>Native</span></li>
+            <li><span>English</span><span>Fluent</span></li>
+            <li><span>French</span><span>Beginner</span></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Education</h2>
+          <div class="kv">
+            <div class="l">Bachelor of Business</div>
+            <div class="d">University of Barcelona · 2014–2018</div>
+          </div>
+          <div class="kv">
+            <div class="l">Advanced Data Analytics</div>
+            <div class="d">Google Academy · 2023</div>
+          </div>
+          <div class="kv">
+            <div class="l">Content Marketing</div>
+            <div class="d">HubSpot Academy · 2020</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Interests</h2>
+          <div class="tags">
+            <span class="tag">Tennis &amp; Soccer</span>
+            <span class="tag">Photography</span>
+            <span class="tag">Meditation</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <section class="main">
+        <div class="section">
+          <h2>Work Experience</h2>
+
+          <!-- Algoryme -->
+          <div class="job">
+            <div class="top">
+              <div class="role">Director <span class="current-badge">Now</span></div>
+              <div class="date">2025 – Present</div>
+            </div>
+            <div class="company">Algoryme · Barcelona, Spain</div>
+            <div class="desc">Web development &amp; data/AI agency building data-driven products for companies.</div>
+            <ul>
+              <li>Lead the agency end to end — strategy, delivery and client relationships — building web platforms and data/AI systems that plug into each client's data.</li>
+              <li>Design data models and predictive models (e.g. <strong>Lifetime Value</strong>) that turn raw data into forecasting, segmentation and automated decisions.</li>
+              <li>Connect LLMs to company databases so teams query data in natural language and automate reporting without waiting on an analyst.</li>
+            </ul>
+            <div style="margin-top:10px;font-size:.82rem;color:var(--faint);font-weight:700;text-transform:uppercase;letter-spacing:.6px;">Selected clients</div>
+            <div class="clients">
+              <a class="client-chip" href="https://www.kleinanzeigen.de/" target="_blank" rel="noopener">Kleinanzeigen</a>
+              <a class="client-chip" href="https://app.svinvesting.com/" target="_blank" rel="noopener">SV Investing</a>
+            </div>
+          </div>
+
+          <!-- RefineFast -->
+          <div class="job">
+            <div class="top">
+              <div class="role">Founder</div>
+              <div class="date">09/2024 – 2025</div>
+            </div>
+            <div class="company">RefineFast · Barcelona, Spain</div>
+            <div class="desc">AI-driven platform helping entrepreneurs validate business ideas with real-world data.</div>
+            <ul>
+              <li>Led end-to-end product development, integrating AI-driven insights into tailored reports that reduce the risk of launching unvalidated ideas.</li>
+              <li>Built and executed customer acquisition across SEO, content, social and partnerships, steadily growing qualified leads.</li>
+              <li>Analysed user behaviour and conversion funnels to optimise engagement and retention.</li>
+            </ul>
+          </div>
+
+          <!-- Mable -->
+          <div class="job">
+            <div class="top">
+              <div class="role">Senior Data Analyst</div>
+              <div class="date">08/2023 – 08/2024</div>
+            </div>
+            <div class="company">Mable · Sydney, Australia</div>
+            <div class="desc">Online platform connecting clients with support providers for care services.</div>
+            <ul>
+              <li>Built an AI model using LLMs to detect support workers in stressful client interactions and offer tailored counselling.</li>
+              <li>Led B2B insights reporting to the CGO &amp; Head of Partnerships — lead scoring, churn analysis, attribution and conversion-likelihood modelling.</li>
+              <li>Delivered C-level monthly reporting in Tableau &amp; SQL and mentored other analysts.</li>
+            </ul>
+          </div>
+
+          <!-- Vitable Data Analyst -->
+          <div class="job">
+            <div class="top">
+              <div class="role">Data Analyst</div>
+              <div class="date">05/2022 – 07/2023</div>
+            </div>
+            <div class="company">Vitable · Sydney, Australia</div>
+            <div class="desc">Health-tech startup, 25+ employees and $15m+ annual revenue.</div>
+            <ul>
+              <li>Built dashboards in Tableau &amp; Tableau Prep for core KPIs, saving 25+ hours/week of manual reporting across departments.</li>
+              <li>Delivered predictive-modelling projects (e.g. detecting incorrect home addresses) and automated SQL queries.</li>
+              <li>Automated repetitive tasks with Excel macros and Zapier, lifting operational efficiency ~80%.</li>
+            </ul>
+          </div>
+
+          <!-- Vitable Growth -->
+          <div class="job">
+            <div class="top">
+              <div class="role">Growth Marketer &amp; Affiliates Manager</div>
+              <div class="date">01/2020 – 04/2022</div>
+            </div>
+            <div class="company">Vitable · Sydney, Australia</div>
+            <ul>
+              <li>Created an ambassador program with 1000+ partners driving 25% of sales and 139,570 site clicks in 2022.</li>
+              <li>Launched a referral program contributing 12% of sales since 2021.</li>
+              <li>Managed a full-time intern and an agency, running multi-channel acquisition campaigns.</li>
+            </ul>
+          </div>
+
+          <!-- Abitari -->
+          <div class="job">
+            <div class="top">
+              <div class="role">Growth Marketer</div>
+              <div class="date">02/2019 – 12/2019</div>
+            </div>
+            <div class="company">Abitari · Barcelona, Spain</div>
+            <div class="desc">B2B SaaS automating hotel check-ins, serving 100+ clients.</div>
+            <ul>
+              <li>Led a full website redesign from customer segmentation &amp; competitive research, increasing leads by 225%.</li>
+              <li>Ran multi-channel campaigns and built automations across HubSpot, Google Ads/Analytics, Facebook Ads, Snov.io, Trello and Slack.</li>
+            </ul>
+          </div>
+
+          <!-- Restia -->
+          <div class="job">
+            <div class="top">
+              <div class="role">Co-Founder &amp; CEO</div>
+              <div class="date">11/2017 – 01/2019</div>
+            </div>
+            <div class="company">Restia · Barcelona, Spain</div>
+            <div class="desc">B2B SaaS to take restaurant orders and charge customers.</div>
+            <ul>
+              <li>Led a team of 6 engineers to ship functional software and improve operational efficiency.</li>
+              <li>Owned business plans, budgets and KPI reporting; set strategy for brand positioning and product experience.</li>
+              <li>Represented the company in media and negotiations with suppliers and partners.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Selected Data Projects</h2>
+          <div class="project">
+            <h4>Lifetime Value (LTV) predictive model</h4>
+            <p>Predictive model estimating customer lifetime value to guide acquisition budget, segmentation and retention priorities.</p>
+          </div>
+          <div class="project">
+            <h4>Courier attribution model</h4>
+            <p>In-house probabilistic model picking the best courier per order by price, historical delivery time and error rate.
+            <span class="impact">→ 5% lower shipping time and cost.</span></p>
+          </div>
+          <div class="project">
+            <h4>Incorrect home addresses model</h4>
+            <p>Probabilistic model predicting address accuracy from client location.
+            <span class="impact">→ saved thousands in return-to-sender fees.</span></p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Previous Experience</h2>
+          <ul class="prev-list">
+            <li><span>Junior Marketing Analyst · La Caixa, Barcelona</span><span class="date">08/2017 – 04/2018</span></li>
+            <li><span>Volunteer · Council of the European Union, Hannover</span><span class="date">07/2017 – 08/2017</span></li>
+            <li><span>Product Expert · Samsung, Barcelona</span><span class="date">03/2016 – 07/2017</span></li>
+            <li><span>Volunteer · Council of the European Union, Marche-en-Famenne</span><span class="date">07/2015 – 08/2015</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      Built with data, coffee and a bit of AI · <a href="https://algoryme.com" target="_blank" rel="noopener">algoryme.com</a>
+    </footer>
+  </main>
+</body>
+</html>
