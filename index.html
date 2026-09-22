@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rogelio Alcaraz · Data & AI</title>
-  <meta name="description" content="Rogelio Alcaraz. Director at Algoryme. Data and AI for growth. Barcelona." />
-  <meta property="og:title" content="Rogelio Alcaraz · Data & AI" />
-  <meta property="og:description" content="Director at Algoryme. Senior Data Analyst blending data, AI and marketing to drive growth." />
+  <title>Rogelio Alcaraz · Data &amp; AI Consultant — CV</title>
+  <meta name="description" content="Rogelio Alcaraz. Data & AI Engineer. GenAI, RAG and agentic workflows. Barcelona, remote across Europe." />
+  <meta property="og:title" content="Rogelio Alcaraz · Data & AI Consultant" />
+  <meta property="og:description" content="Data & AI Engineer building predictive models, data products and LLM/RAG solutions." />
   <meta property="og:type" content="profile" />
   <meta property="og:image" content="assets/profile.png" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
@@ -73,8 +73,8 @@
       font-weight: 500;
     }
     .hero .sub {
-      margin-top: 4px;
-      font-size: .95rem;
+      margin-top: 6px;
+      font-size: .9rem;
       color: #9fb6e0;
     }
     .hero-contact {
@@ -118,29 +118,24 @@
       border-bottom: 2px solid var(--line);
     }
 
+    /* ---------- Summary ---------- */
+    .summary p { font-size: .94rem; color: #35435a; }
+
     /* ---------- Sidebar bits ---------- */
-    .skill-group { margin-bottom: 18px; }
+    .skill-group { margin-bottom: 16px; }
     .skill-group h3 {
       font-size: .78rem;
       color: var(--faint);
       text-transform: uppercase;
       letter-spacing: .6px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       font-weight: 700;
     }
-    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tag {
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: .8rem;
-      font-weight: 600;
-      padding: 4px 10px;
-      border-radius: 999px;
-      white-space: nowrap;
-    }
+    .skill-line { font-size: .86rem; color: #35435a; line-height: 1.5; }
     .kv { margin-bottom: 12px; }
     .kv .l { font-weight: 600; font-size: .92rem; }
     .kv .d { color: var(--muted); font-size: .86rem; }
+    .kv .d.sec { font-size: .8rem; color: var(--faint); }
     ul.lang { list-style: none; }
     ul.lang li {
       display: flex; justify-content: space-between;
@@ -149,6 +144,8 @@
     }
     ul.lang li:last-child { border-bottom: none; }
     ul.lang li span:last-child { color: var(--faint); font-size: .82rem; }
+
+    .side-note { font-size: .84rem; color: var(--muted); }
 
     /* ---------- Experience ---------- */
     .job { position: relative; padding-left: 22px; margin-bottom: 26px; }
@@ -185,14 +182,18 @@
       border-radius: 999px; text-transform: uppercase;
       letter-spacing: .5px; margin-left: 8px; vertical-align: middle;
     }
+    .sub-label {
+      margin-top: 12px; font-size: .82rem; color: var(--faint);
+      font-weight: 700; text-transform: uppercase; letter-spacing: .6px;
+    }
 
     /* ---------- Projects ---------- */
     .project {
       background: #fafbfd; border: 1px solid var(--line);
-      border-radius: 12px; padding: 16px 18px; margin-bottom: 12px;
+      border-radius: 12px; padding: 12px 16px; margin-bottom: 10px;
     }
-    .project h4 { font-size: .98rem; margin-bottom: 4px; }
-    .project p { font-size: .88rem; color: var(--muted); }
+    .project h4 { font-size: .94rem; margin-bottom: 3px; }
+    .project p { font-size: .87rem; color: var(--muted); }
     .project .impact { color: #15803d; font-weight: 600; }
 
     .clients {
@@ -206,6 +207,7 @@
       text-decoration: none;
     }
     .client-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .clients-text { margin-top: 6px; font-size: .82rem; color: var(--faint); }
 
     .prev-list { list-style: none; }
     .prev-list li {
@@ -216,12 +218,23 @@
     .prev-list li:last-child { border-bottom: none; }
     .prev-list .date { color: var(--faint); font-weight: 600; font-size: .82rem; }
 
+    .earlier-item { margin-bottom: 12px; }
+    .earlier-item:last-child { margin-bottom: 0; }
+    .earlier-item .top {
+      display: flex; justify-content: space-between; flex-wrap: wrap;
+      align-items: baseline; gap: 4px;
+    }
+    .earlier-item .role { font-weight: 700; font-size: .95rem; }
+    .earlier-item .company { color: var(--accent); font-weight: 600; font-size: .9rem; }
+    .earlier-item .date { font-size: .82rem; color: var(--faint); font-weight: 600; white-space: nowrap; }
+    .earlier-item p { font-size: .88rem; color: #35435a; margin-top: 2px; }
+
     .extras {
       padding: 34px 44px 40px;
       background: #fafbfd;
       border-top: 1px solid var(--line);
       display: grid;
-      grid-template-columns: 1.2fr 1fr 1fr;
+      grid-template-columns: 1.3fr 1fr;
       gap: 34px;
     }
     .extras .kv { margin-bottom: 12px; }
@@ -278,28 +291,31 @@
       }
       .hero {
         gap: 22px;
-        padding: 26px 30px;
+        padding: 24px 30px;
       }
-      .hero img { width: 96px; height: 96px; border-width: 3px; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero .tagline { font-size: .92rem; margin-top: 5px; }
-      .hero-contact { margin-top: 10px; gap: 5px 14px; font-size: .78rem; }
+      .hero img { width: 92px; height: 92px; border-width: 3px; }
+      .hero h1 { font-size: 1.75rem; }
+      .hero .tagline { font-size: .9rem; margin-top: 5px; }
+      .hero .sub { font-size: .76rem; margin-top: 4px; }
+      .hero-contact { margin-top: 10px; gap: 5px 14px; font-size: .76rem; }
 
       .body { grid-template-columns: 210px 1fr; }
       .sidebar { padding: 22px 20px; }
       .main { padding: 22px 26px; }
-      .section { margin-bottom: 18px; }
+      .section { margin-bottom: 16px; }
       .section h2 { margin-bottom: 10px; padding-bottom: 5px; }
+      .summary p { font-size: .9em; }
 
-      .job { margin-bottom: 15px; }
+      .job { margin-bottom: 14px; }
       .job::after { display: none; }
       .job .role { font-size: .98rem; }
       .job ul li { margin-bottom: 3px; }
+      .project { padding: 9px 12px; margin-bottom: 7px; }
 
-      .extras { padding: 22px 26px 26px; gap: 22px; }
+      .extras { padding: 22px 26px 26px; gap: 26px; }
 
       /* Keep blocks whole across page breaks */
-      .job, .project, .skill-group, .kv,
+      .job, .project, .skill-group, .kv, .earlier-item,
       .prev-list li, ul.lang li { break-inside: avoid; }
       .section h2, .job .top, .job .company { break-after: avoid; }
     }
@@ -313,9 +329,9 @@
       <img src="assets/profile.png" alt="Rogelio Alcaraz" />
       <div>
         <h1>Rogelio Alcaraz</h1>
-        <div class="tagline">Director @ Algoryme · Data &amp; AI for Growth</div>
+        <div class="tagline">Data &amp; AI Engineer | GenAI, RAG &amp; Agentic Workflows</div>
+        <div class="sub">Barcelona, Spain · Remote across Europe · Spanish / EU work authorisation</div>
         <div class="hero-contact">
-          <span>📍 Barcelona, Spain</span>
           <a href="mailto:ralcaraz.canals@gmail.com">✉️ ralcaraz.canals@gmail.com</a>
           <a href="tel:+34618142108">📞 +34 618 142 108</a>
           <a href="https://www.linkedin.com/in/rogelio-alcaraz" target="_blank" rel="noopener">in LinkedIn</a>
@@ -331,75 +347,71 @@
         <div class="section">
           <h2>Core Skills</h2>
           <div class="skill-group">
-            <h3>Tools &amp; Software</h3>
-            <div class="tags">
-              <span class="tag">SQL</span>
-              <span class="tag">Python</span>
-              <span class="tag">Databricks</span>
-              <span class="tag">BigQuery</span>
-              <span class="tag">Snowflake</span>
-              <span class="tag">dbt</span>
-              <span class="tag">Tableau</span>
-              <span class="tag">Power BI</span>
-              <span class="tag">Looker</span>
-              <span class="tag">Google Analytics</span>
-              <span class="tag">Salesforce</span>
-              <span class="tag">HubSpot</span>
-              <span class="tag">Excel</span>
-              <span class="tag">Zapier / n8n</span>
-              <span class="tag">LLMs / AI</span>
-              <span class="tag">Claude / OpenAI APIs</span>
-              <span class="tag">Git</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">React</span>
-              <span class="tag">WordPress</span>
-            </div>
+            <h3>Data &amp; Analytics</h3>
+            <div class="skill-line">SQL · Python · Data modelling · Predictive analytics · Forecasting · Segmentation · Churn · Lifetime Value (LTV) · Lead scoring · Attribution modelling · A/B testing</div>
           </div>
           <div class="skill-group">
-            <h3>Techniques</h3>
-            <div class="tags">
-              <span class="tag">Predictive Analytics</span>
-              <span class="tag">Lifetime Value (LTV)</span>
-              <span class="tag">Data Visualisation</span>
-              <span class="tag">A/B Testing</span>
-              <span class="tag">Lead Scoring</span>
-              <span class="tag">Attribution Modelling</span>
-            </div>
+            <h3>Business Intelligence</h3>
+            <div class="skill-line">Tableau · Power BI · Looker · BigQuery · Snowflake · Databricks · dbt · Excel · Power Query · DAX · Salesforce · Google Analytics</div>
           </div>
           <div class="skill-group">
-            <h3>Strengths</h3>
-            <div class="tags">
-              <span class="tag">Analytical</span>
-              <span class="tag">Problem solving</span>
-              <span class="tag">Communication</span>
-              <span class="tag">Digital marketing</span>
-            </div>
+            <h3>GenAI &amp; Automation</h3>
+            <div class="skill-line">LLMs · RAG · LangChain · Agentic workflows · OpenAI API · Anthropic Claude API · APIs · n8n · Zapier · Natural-language interfaces</div>
           </div>
+          <div class="skill-group">
+            <h3>Engineering &amp; Delivery</h3>
+            <div class="skill-line">Git / GitHub · Data pipelines · ETL/ELT · Stakeholder management · Client delivery · Technical documentation · Cross-functional collaboration</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Selected Clients</h2>
+          <div class="clients">
+            <a class="client-chip" href="https://www.kleinanzeigen.de/" target="_blank" rel="noopener">Kleinanzeigen</a>
+            <a class="client-chip" href="https://app.svinvesting.com/" target="_blank" rel="noopener">SV Investing</a>
+          </div>
+          <div class="clients-text">Selected clients: Kleinanzeigen, SV Investing.</div>
         </div>
       </aside>
 
       <!-- MAIN -->
       <section class="main">
+        <div class="section summary">
+          <h2>Professional Summary</h2>
+          <p>Data &amp; AI professional with 10+ years across analytics, growth and AI, building predictive models, data products and LLM/RAG solutions connected to company databases. Hands-on with Python, SQL, OpenAI/Claude APIs, LangChain, data modelling, BI and workflow automation. Experienced in translating business needs into deployable solutions and communicating results to C-level and cross-functional stakeholders.</p>
+        </div>
+
         <div class="section">
           <h2>Work Experience</h2>
 
           <!-- Algoryme -->
           <div class="job">
             <div class="top">
-              <div class="role">Director <span class="current-badge">Now</span></div>
-              <div class="date">2025 to Present</div>
+              <div class="role">Freelance Data &amp; AI Consultant / Director <span class="current-badge">Now</span></div>
+              <div class="date">2025 – Present</div>
             </div>
             <div class="company">Algoryme · Barcelona, Spain</div>
-            <div class="desc">Web development &amp; data/AI agency building data-driven products for companies.</div>
+            <div class="desc">Independent Data &amp; AI consultancy delivering project-based analytics, predictive modelling and GenAI solutions for clients.</div>
             <ul>
-              <li>Lead the agency end to end: strategy, delivery and client relationships, building web platforms and data/AI systems that plug into each client's data.</li>
-              <li>Design data models and predictive models (e.g. <strong>Lifetime Value</strong>) that turn raw data into forecasting, segmentation and automated decisions.</li>
-              <li>Connect LLMs to company databases so teams query data in natural language and automate reporting without waiting on an analyst.</li>
+              <li>Lead end-to-end client delivery, from discovery and solution design to implementation, stakeholder communication and handover.</li>
+              <li>Build predictive models for customer lifetime value, churn, segmentation and attribution, turning business data into forecasts and automated decisions.</li>
+              <li>Design LLM/RAG and agentic workflows connected to company databases and APIs, enabling natural-language access to data and automated reporting.</li>
+              <li>Develop data products and web platforms that integrate analytics, business logic and AI into client workflows.</li>
+              <li>Manage client relationships, project scope and delivery priorities across multiple engagements.</li>
             </ul>
-            <div style="margin-top:10px;font-size:.82rem;color:var(--faint);font-weight:700;text-transform:uppercase;letter-spacing:.6px;">Selected clients</div>
-            <div class="clients">
-              <a class="client-chip" href="https://www.kleinanzeigen.de/" target="_blank" rel="noopener">Kleinanzeigen</a>
-              <a class="client-chip" href="https://app.svinvesting.com/" target="_blank" rel="noopener">SVInvesting</a>
+
+            <div class="sub-label">Selected Data &amp; AI Projects</div>
+            <div class="project">
+              <h4>Natural-language data assistant</h4>
+              <p>Designed an LLM/RAG workflow connected to company databases so teams could query operational data and automate recurring reports.</p>
+            </div>
+            <div class="project">
+              <h4>Predictive customer analytics</h4>
+              <p>Built LTV, churn and segmentation models to support forecasting and automated commercial decisions.</p>
+            </div>
+            <div class="project">
+              <h4>Agentic workflow automation</h4>
+              <p>Integrated LLMs, APIs and n8n workflows to automate multi-step business processes.</p>
             </div>
           </div>
 
@@ -407,14 +419,16 @@
           <div class="job">
             <div class="top">
               <div class="role">Senior Data Analyst</div>
-              <div class="date">08/2023 to 08/2024</div>
+              <div class="date">Aug 2023 – Aug 2024</div>
             </div>
             <div class="company">Mable · Sydney, Australia</div>
             <div class="desc">Online platform connecting clients with support providers for care services.</div>
             <ul>
-              <li>Built an AI model using LLMs to detect support workers in stressful client interactions and offer tailored counselling.</li>
-              <li>Led B2B insights reporting to the CGO &amp; Head of Partnerships on Salesforce CRM data: lead scoring, churn analysis, attribution and conversion-likelihood modelling.</li>
-              <li>Delivered C-level monthly reporting in Tableau &amp; SQL and mentored other analysts.</li>
+              <li>Led B2B growth analytics for the CGO and Head of Partnerships, translating Salesforce CRM data into lead scoring, churn, attribution and conversion-likelihood models.</li>
+              <li>Built an LLM-based model to identify support workers in stressful client interactions and enable tailored counselling interventions.</li>
+              <li>Delivered monthly C-level reporting and decision support using SQL and Tableau, communicating findings to senior and cross-functional stakeholders.</li>
+              <li>Partnered with commercial teams to define KPIs, analyse funnel performance and prioritise growth opportunities.</li>
+              <li>Mentored analysts and improved the consistency of analytical delivery.</li>
             </ul>
           </div>
 
@@ -422,87 +436,65 @@
           <div class="job">
             <div class="top">
               <div class="role">Data Analyst</div>
-              <div class="date">05/2022 to 07/2023</div>
+              <div class="date">May 2022 – Jul 2023</div>
             </div>
             <div class="company">Vitable · Sydney, Australia</div>
             <div class="desc">Health-tech startup, 25+ employees and $15m+ annual revenue.</div>
             <ul>
-              <li>Built dashboards in Tableau &amp; Tableau Prep for core KPIs, saving 25+ hours/week of manual reporting across departments.</li>
-              <li>Delivered predictive-modelling projects (e.g. detecting incorrect home addresses) and automated SQL queries.</li>
-              <li>Automated repetitive tasks with Excel macros and Zapier, lifting operational efficiency ~80%.</li>
-            </ul>
-          </div>
-
-          <!-- Vitable Growth -->
-          <div class="job">
-            <div class="top">
-              <div class="role">Growth Marketer &amp; Affiliates Manager</div>
-              <div class="date">01/2020 to 04/2022</div>
-            </div>
-            <div class="company">Vitable · Sydney, Australia</div>
-            <ul>
-              <li>Created an ambassador program with 1000+ partners driving 25% of sales and 139,570 site clicks in 2022.</li>
-              <li>Launched a referral program contributing 12% of sales since 2021.</li>
-              <li>Managed a full-time intern and an agency, running multi-channel acquisition campaigns.</li>
-            </ul>
-          </div>
-
-          <!-- Abitari -->
-          <div class="job">
-            <div class="top">
-              <div class="role">Growth Marketer</div>
-              <div class="date">02/2019 to 12/2019</div>
-            </div>
-            <div class="company">Abitari · Barcelona, Spain</div>
-            <div class="desc">B2B SaaS automating hotel check-ins, serving 100+ clients.</div>
-            <ul>
-              <li>Led a full website redesign from customer segmentation &amp; competitive research, increasing leads by 225%.</li>
-              <li>Ran multi-channel campaigns and built automations across HubSpot, Google Ads/Analytics, Facebook Ads, Snov.io, Trello and Slack.</li>
-            </ul>
-          </div>
-
-          <!-- Restia -->
-          <div class="job">
-            <div class="top">
-              <div class="role">Co-Founder &amp; CEO</div>
-              <div class="date">11/2017 to 01/2019</div>
-            </div>
-            <div class="company">Restia · Barcelona, Spain</div>
-            <div class="desc">B2B SaaS to take restaurant orders and charge customers.</div>
-            <ul>
-              <li>Led a team of 6 engineers to ship functional software and improve operational efficiency.</li>
-              <li>Owned business plans, budgets and KPI reporting; set strategy for brand positioning and product experience.</li>
-              <li>Represented the company in media and negotiations with suppliers and partners.</li>
+              <li>Built a probabilistic courier-selection model using price, historical delivery time and error rate; adopted by operations and reduced shipping time and cost by 5%.</li>
+              <li>Built Tableau / Tableau Prep dashboards for core KPIs, saving 25+ hours per week of manual reporting across departments.</li>
+              <li>Developed predictive models in SQL and Python, including detection of incorrect home addresses, and automated recurring data workflows.</li>
+              <li>Automated operational processes with Excel macros and Zapier, improving efficiency by approximately 80%.</li>
             </ul>
           </div>
         </div>
 
         <div class="section">
-          <h2>Previous Experience</h2>
-          <ul class="prev-list">
-            <li><span>Junior Marketing Analyst · La Caixa, Barcelona</span><span class="date">08/2017 to 04/2018</span></li>
-            <li><span>Volunteer · Council of the European Union, Hannover</span><span class="date">07/2017 to 08/2017</span></li>
-            <li><span>Product Expert · Samsung, Barcelona</span><span class="date">03/2016 to 07/2017</span></li>
-            <li><span>Volunteer · Council of the European Union, Marche-en-Famenne</span><span class="date">07/2015 to 08/2015</span></li>
-          </ul>
+          <h2>Earlier Experience — Growth, Product &amp; Entrepreneurship</h2>
+          <div class="earlier-item">
+            <div class="top">
+              <div class="role">Growth Marketer &amp; Affiliates Manager</div>
+              <div class="date">2020 – 2022</div>
+            </div>
+            <div class="company">Vitable · Sydney, Australia</div>
+            <p>Built a 1,000+ partner ambassador program driving 25% of sales and launched a referral program contributing 12% of sales.</p>
+          </div>
+          <div class="earlier-item">
+            <div class="top">
+              <div class="role">Growth Marketer</div>
+              <div class="date">2019</div>
+            </div>
+            <div class="company">Abitari · Barcelona, Spain</div>
+            <p>Led customer segmentation, competitive research and a website redesign that increased leads by 225%; built HubSpot and marketing automations.</p>
+          </div>
+          <div class="earlier-item">
+            <div class="top">
+              <div class="role">Co-Founder &amp; CEO</div>
+              <div class="date">2017 – 2019</div>
+            </div>
+            <div class="company">Restia · Barcelona, Spain</div>
+            <p>Led a six-engineer team, owned budgets and KPIs, and shipped B2B SaaS software for restaurant operations.</p>
+          </div>
+          <div class="earlier-item">
+            <p class="side-note">Earlier roles: Junior Marketing Analyst · La Caixa (2017–2018); Product Expert · Samsung (2016–2017); volunteer, Council of the European Union (2015, 2017).</p>
+          </div>
         </div>
       </section>
     </div>
 
     <section class="extras">
       <div>
-        <h2 style="font-size:.82rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:700;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--line);">Education</h2>
+        <h2 style="font-size:.82rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:700;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--line);">Education &amp; Certifications</h2>
         <div class="kv">
           <div class="l">Bachelor of Business</div>
-          <div class="d">University of Barcelona · 2014 to 2018</div>
+          <div class="d">University of Barcelona · 2014 – 2018</div>
         </div>
         <div class="kv">
           <div class="l">Advanced Data Analytics</div>
           <div class="d">Google Academy · 2023</div>
         </div>
         <div class="kv">
-          <div class="l">Content Marketing</div>
-          <div class="d">HubSpot Academy · 2020</div>
+          <div class="d sec">Content Marketing · HubSpot Academy · 2020</div>
         </div>
       </div>
       <div>
@@ -510,17 +502,9 @@
         <ul class="lang">
           <li><span>Spanish</span><span>Native</span></li>
           <li><span>Catalan</span><span>Native</span></li>
-          <li><span>English</span><span>Fluent</span></li>
+          <li><span>English</span><span>Native</span></li>
           <li><span>French</span><span>Beginner</span></li>
         </ul>
-      </div>
-      <div>
-        <h2 style="font-size:.82rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:700;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--line);">Interests</h2>
-        <div class="tags">
-          <span class="tag">Tennis &amp; Soccer</span>
-          <span class="tag">Photography</span>
-          <span class="tag">Meditation</span>
-        </div>
       </div>
     </section>
   </main>
